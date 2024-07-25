@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOFUSOUP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #f8f8f8;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .section {
+            margin: 10px;
+            flex: 1;
+            min-width: 200px;
+            max-width: 300px;
+        }
+
+            .section h2 {
+                text-align: center;
+            }
+
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 10px;
+        }
+
+            .button-grid a {
+                display: block;
+                background-color: #4CAF50;
+                color: white;
+                padding: 20px;
+                text-align: center;
+                text-decoration: none;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+
+                .button-grid a:hover {
+                    background-color: #45a049;
+                }
+    </style>
+</head>
+<body>
+    <header>
+        TOFUSOUP
+    </header>
+    <div class="container">
+        <div class="section">
+            <h2>Game</h2>
+            <div class="button-grid">
+                <a href="#game1">Game 1</a>
+                <a href="#game2">Game 2</a>
+                <a href="#game3">Game 3</a>
+            </div>
+        </div>
+        <div class="section">
+            <h2>App</h2>
+            <div class="button-grid">
+                <a href="#app1">App 1</a>
+                <a href="#app2">App 2</a>
+                <a href="#app3">App 3</a>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Other</h2>
+            <div class="button-grid">
+                <a href="#other1">Other 1</a>
+                <a href="#other2">Other 2</a>
+                <a href="#other3">Other 3</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
